@@ -19,7 +19,7 @@ const eqArrays = function(array1, array2) {
     }
   } return true;
 } 
-const assertArraysEqual = function(array1, array2){
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(array1, array2)) {
     return `👍👍👍Assertion Passed: ${actual} === ${expected}`;
   } else {
