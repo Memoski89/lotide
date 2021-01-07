@@ -5,21 +5,18 @@ const assertEqual = function(actual, expected) {
     console.log(`👎👎👎Assertion failed: ${actual} !== ${expected}`);
   }
 };
-const findKeyByValue = function(object, value) {
-  const result ={}
-  for (const obj of Object.keys(object)) {
-    if (value[obj] !== value) {
-      console.log("eggs")
-    } 
-    /* console.log(`${object} ${value}`); // “a 5”, “b 7", “c 9” */
-   }
-return result
-}
-
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const findKeyByValue = function(listOfShows, tvShow) {
+  for (const [key, value] of Object.entries(listOfShows)) {
+    if (tvShow === value) {
+      return key;
+    }
+  }
+  return undefined;
+};
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
+  drama: "The Wire",
 };
 /* findKeyByValue(bestTVShowsByGenre, "action") */
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"); 
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
