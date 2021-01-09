@@ -17,14 +17,15 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`👎👎👎Assertion failed: ${actual} !== ${expected}`);
   }
 }; */
-const without = function (input, undesirables) {
+const without = function(input, undesirables) {
   let output = [];
   let flag = true;
   for (let i = 0; i < input.length; i++) {
     if (!undesirables.includes(input[i])) {
       output.push(input[i]);
     }
-  } return output
-}
+  }
+  return output;
+};
 console.log(without([1, 2, 3], [1]));
 console.log(without(["1", "2", "3"], [1, 2, "3"]));

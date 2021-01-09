@@ -2,11 +2,11 @@ const words = ["ground", "control", "to", "major", "tom"];
 
 const lol = ["Laughing", "Out", "Loud"];
 
-const elite = ["leader",38,37,"Team"];
+const elite = ["leader", 38, 37, "Team"];
 
 const randomNumbers = [623847803925834279294820394820394820];
 
-const map = function (array, callback) {
+const map = function(array, callback) {
   /* console.log('array: ', array);
   console.log('callback: ', callback); */
   const results = [];
@@ -19,16 +19,15 @@ const map = function (array, callback) {
   return results;
 };
 
-/* const results1 = */ 
+/* const results1 = */
 map(words, (word) => word[0]);
 map(lol, (word) => word[0]);
 map(elite, (word) => word[0]);
-map(randomNumbers, (word) => word[0]); 
+map(randomNumbers, (word) => word[0]);
 
+/* console.log(results1); */
 
- /* console.log(results1); */
-
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   } else {
@@ -40,7 +39,7 @@ const eqArrays = function (array1, array2) {
   }
   return true;
 };
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`👍👍👍Assertion Passed: ${array1} === ${array2}`);
   } else {
@@ -51,11 +50,10 @@ const assertArraysEqual = function (array1, array2) {
 const firstLetters = map(words, (word) => word[0]);
 const firstLetters2 = map(lol, (word) => word[0]);
 const firstLetters3 = map(elite, (word) => word[0]);
-const firstLetters4 = map(randomNumbers, (word) => word[0]); 
+const firstLetters4 = map(randomNumbers, (word) => word[0]);
 
-
-assertArraysEqual(firstLetters, ['g', 'c','t','m','t'])
-assertArraysEqual(firstLetters2, ['L','O','L'])
-assertArraysEqual(firstLetters3, ['l',3,3,'t'])
-assertArraysEqual(firstLetters4, [6,9])
+assertArraysEqual(firstLetters, ["g", "c", "t", "m", "t"]);
+assertArraysEqual(firstLetters2, ["L", "O", "L"]);
+assertArraysEqual(firstLetters3, ["l", 3, 3, "t"]);
+assertArraysEqual(firstLetters4, [6, 9]);
 /* assertArraysEqual([1, 2, 3], [1, 2, 3]) */
