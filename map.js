@@ -4,7 +4,7 @@ const lol = ["Laughing", "Out", "Loud"];
 
 const elite = ["leader",38,37,"Team"];
 
-const randomNumbers = [62384780392583427,9294820394820394820];
+const randomNumbers = [623847803925834279294820394820394820];
 
 const map = function (array, callback) {
   /* console.log('array: ', array);
@@ -57,4 +57,5 @@ const firstLetters4 = map(randomNumbers, (word) => word[0]);
 assertArraysEqual(firstLetters, ['g', 'c','t','m','t'])
 assertArraysEqual(firstLetters2, ['L','O','L'])
 assertArraysEqual(firstLetters3, ['l',3,3,'t'])
+assertArraysEqual(firstLetters4, [6,9])
 /* assertArraysEqual([1, 2, 3], [1, 2, 3]) */
