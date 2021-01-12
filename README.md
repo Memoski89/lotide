@@ -25,7 +25,7 @@ This project was created and published by me as part of my learnings at Lighthou
 ## Documentation
 
 The following functions are currently implemented:
-head, tail, middle, eqArrays, assertEqual,assertArraysEqual
+
 * `head`: prints the item in [0]
 * `tail`: prints item item in[array.length-1] (last iteme in index)
 * `eqArrays`: compares Arrays to see if they're the same
