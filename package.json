@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@memoski89/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide project library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Memoski89/lotide.git"
   },
-  "author": "",
+  "author": "Louis Coreas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Memoski89/lotide/issues"
